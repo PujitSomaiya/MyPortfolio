@@ -1,0 +1,154 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+}
+
+a {
+  color: #0563bb;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #067ded;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/hero_img.png") top right no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#hero .hero-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+
+.hero-content .img {
+  height: auto;
+  width: auto;
+}
+
+.hero-content .img img {
+  height: auto;
+  width: 300px;
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 60px;
+  color: #45505b;
+}
+
+#hero p {
+  color: #45505b;
+  margin: 15px 0 0 0;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero p span {
+  color: #0563bb;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+#hero .social-links {
+  margin-top: 30px;
+}
+
+#hero .social-links a {
+  font-size: 26px;
+  display: inline-block;
+  color: #45505b;
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+#hero .social-links a:hover {
+  color: #0563bb;
+}
+
+#hero .btn_CV {
+  margin: 5% 0 0 0;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #576571;
+  border-radius: 20px;
+  transition: all ease .5s;
+}
+
+#hero .btn_CV:hover {
+  background-color: #0563bb;
+  transition: all ease .5s;
+}
+
+@media (max-width: 992px) {
+  #hero {
+    text-align: center;
+  }
+
+  #hero .hero-content {
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .hero-content .img img {
+    height: auto;
+    width: 250px;
+  }
+
+  #hero h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  #hero p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  #hero .btn_CV {
+    margin: 7% 0 0 0;
+    padding: 8px 28px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero {
+    text-align: center;
+    background: url("../img/hero_img_small.png") top right no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}
